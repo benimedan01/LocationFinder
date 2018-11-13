@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "closure #1 in LocationDetailsInteractor.getLocationDetails():LocationDetailsInteractor.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response?.mapItems">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LocationListInteractor.completerDidUpdateResults(_:):LocationListInteractor.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "completer.results[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

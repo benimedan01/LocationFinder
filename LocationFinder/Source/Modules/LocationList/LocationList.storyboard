@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="exp-sP-cpF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Location List View Controller-->
+        <scene sceneID="9F0-Ed-alI">
+            <objects>
+                <viewController restorationIdentifier="ListViewController" storyboardIdentifier="ListViewController" id="exp-sP-cpF" customClass="LocationListViewController" customModule="LocationFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eXT-b6-0eP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="UaU-hW-UCT">
+                                <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="liK-Xp-Jsu">
+                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="BWt-n5-6yF"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oJM-pU-Eiy">
+                                <rect key="frame" x="0.0" y="76" width="375" height="591"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oJM-pU-Eiy" firstAttribute="trailing" secondItem="d6z-tO-xeG" secondAttribute="trailing" id="2Bt-Ff-YM8"/>
+                            <constraint firstItem="liK-Xp-Jsu" firstAttribute="leading" secondItem="d6z-tO-xeG" secondAttribute="leading" id="DRh-hN-f49"/>
+                            <constraint firstItem="UaU-hW-UCT" firstAttribute="centerY" secondItem="eXT-b6-0eP" secondAttribute="centerY" id="I46-N6-Rz6"/>
+                            <constraint firstItem="liK-Xp-Jsu" firstAttribute="trailing" secondItem="d6z-tO-xeG" secondAttribute="trailing" id="Iif-zm-MCi"/>
+                            <constraint firstItem="liK-Xp-Jsu" firstAttribute="top" secondItem="d6z-tO-xeG" secondAttribute="top" id="J4o-SB-cGE"/>
+                            <constraint firstItem="UaU-hW-UCT" firstAttribute="centerX" secondItem="eXT-b6-0eP" secondAttribute="centerX" id="Mge-M3-Hmq"/>
+                            <constraint firstItem="oJM-pU-Eiy" firstAttribute="leading" secondItem="d6z-tO-xeG" secondAttribute="leading" id="Op0-KY-ri6"/>
+                            <constraint firstItem="oJM-pU-Eiy" firstAttribute="top" secondItem="liK-Xp-Jsu" secondAttribute="bottom" id="bcY-kq-OV7"/>
+                            <constraint firstItem="oJM-pU-Eiy" firstAttribute="bottom" secondItem="d6z-tO-xeG" secondAttribute="bottom" id="oRQ-QO-tmD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="d6z-tO-xeG"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="UaU-hW-UCT" id="2VJ-xv-ctQ"/>
+                        <outlet property="locationsTableView" destination="oJM-pU-Eiy" id="P64-HM-jE8"/>
+                        <outlet property="searchBar" destination="liK-Xp-Jsu" id="Euh-yA-rgX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cQM-tO-eLK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245.59999999999999" y="209.14542728635683"/>
+        </scene>
+    </scenes>
+</document>
